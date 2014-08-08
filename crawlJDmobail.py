@@ -1,4 +1,5 @@
 #-*- coding: UTF-8 -*-
+
 '''
 Created on 2013-12-5
  
@@ -32,7 +33,7 @@ def analyzeList():
     pageNum = 0
     list = []
     url = getNextPageUrl(pageNum)
-    while url !='':
+    for i in range(20):
         soup = bs4.BeautifulSoup(getPage(url))
         pagelist = soup.findAll('div',{'class':'p-name'})
         for elem in pagelist:
@@ -58,4 +59,4 @@ if __name__ == '__main__':
     list = analyzeList()
     print '共抓取'+str(len(list))+'条\n'
       
-    writeToFile(list, u'E:\\jd_phone_list.dat');
+    writeToFile(list, u'd_phone_list.dat');
