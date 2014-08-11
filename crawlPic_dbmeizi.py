@@ -7,7 +7,7 @@
 
 '''
 import urllib2
-import BeautifulSoup
+from bs4 import BeautifulSoup
 import socket
 
 baseurl = "http://dbmeizi.com/"

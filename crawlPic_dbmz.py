@@ -1,12 +1,6 @@
-__author__ = 'xjp'
 #!/usr/local/bin/python
 #coding:utf-8
-'''
-这个是抓取豆瓣妹子网站的脚本文件
-网址：http://dbmeizi.com/
-代码源自：http://www.oschina.net/code/snippet_192962_35002
 
-'''
 import urllib2
 from bs4 import BeautifulSoup
 import socket
